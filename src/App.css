@@ -1,0 +1,479 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+}
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 240px;
+  min-height: 100vh;
+  background: #102a43;
+  color: white;
+  padding: 20px 12px;
+}
+
+.sidebar-title {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.sidebar-title i {
+  font-size: 40px;
+}
+
+.sidebar-title h4 {
+  margin-top: 10px;
+}
+
+.nav-item {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 13px 15px;
+  margin: 5px 0;
+  border-radius: 8px;
+}
+
+.nav-item i {
+  margin-right: 10px;
+}
+
+.nav-item:hover {
+  background: #1976d2;
+  color: white;
+}
+
+.main-content {
+  flex: 1;
+  padding: 30px;
+}
+
+.page-title {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.dashboard-card {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 30px;
+  min-height: 170px;
+  border-radius: 12px;
+  transition: 0.2s;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-4px);
+  color: white;
+}
+
+.dashboard-card i {
+  font-size: 38px;
+}
+
+.dashboard-card h4 {
+  margin-top: 15px;
+}
+
+.customer-card {
+  background: #198754;
+}
+
+.search-card {
+  background: #0d6efd;
+}
+
+.service-card {
+  background: #fd7e14;
+}
+
+.notification-bar {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  padding: 14px 18px;
+  background: #d1e7dd;
+  color: #0f5132;
+  border: 1px solid #badbcc;
+  border-radius: 8px;
+}
+
+.notification-close {
+  margin-left: 20px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+}
+.customer-page {
+  max-width: 1100px;
+}
+
+.page-header {
+  margin-bottom: 25px;
+}
+
+.customer-form-card {
+  border: none;
+  border-radius: 12px;
+}
+
+.customer-form-card .card-body {
+  padding: 30px;
+}
+
+.form-label {
+  font-weight: 600;
+  color: #263238;
+}
+
+.required {
+  color: red;
+}
+
+.form-control,
+.form-select {
+  min-height: 45px;
+  border-radius: 7px;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+}
+
+.btn {
+  min-height: 44px;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+/* SEARCH PAGE */
+
+.search-page {
+  max-width: 1400px;
+}
+
+.search-input {
+  min-height: 45px;
+}
+
+.search-page .card {
+  border: none;
+  border-radius: 12px;
+}
+
+.search-page .card-header {
+  padding: 18px 20px;
+}
+
+.search-page .table {
+  margin-bottom: 0;
+}
+
+.search-page .table th {
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.search-page .table td {
+  vertical-align: middle;
+}
+/* =========================================================
+   VIEW CUSTOMER DETAILS
+========================================================= */
+
+.customer-details-page {
+  max-width: 1200px;
+}
+
+.details-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #6c757d;
+  margin-bottom: 6px;
+}
+
+.details-value {
+  min-height: 44px;
+  padding: 10px 14px;
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 7px;
+  font-size: 16px;
+  color: #212529;
+}
+
+.customer-details-page .card {
+  border: none;
+  border-radius: 12px;
+}
+
+.customer-details-page .card-header {
+  border-radius: 12px 12px 0 0 !important;
+}
+
+.customer-details-page .badge {
+  font-weight: 600;
+}
+/* =========================================================
+   COMPLETE SERVICE PAGE
+========================================================= */
+
+.complete-service-page {
+  max-width: 1200px;
+}
+
+.complete-service-page .card {
+  border: none;
+  border-radius: 12px;
+}
+
+.service-completion-info {
+  background: #e7f1ff;
+  border: 1px solid #b6d4fe;
+  color: #084298;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.complete-service-page .form-control-lg,
+.complete-service-page .form-select-lg {
+  min-height: 48px;
+}
+
+.complete-service-page .required {
+  color: red;
+}
+/* =========================================================
+   SERVICE RECORDS
+========================================================= */
+
+.service-records-page {
+  max-width: 1600px;
+}
+
+.summary-card {
+  border: none;
+  border-radius: 12px;
+}
+
+.summary-card .card-body {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 22px;
+}
+
+.summary-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.total-icon {
+  background: #e7f1ff;
+  color: #0d6efd;
+}
+
+.active-icon {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.completed-icon {
+  background: #d1e7dd;
+  color: #146c43;
+}
+
+.summary-label {
+  color: #6c757d;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.summary-number {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.service-records-page .card {
+  border: none;
+  border-radius: 12px;
+}
+
+.service-records-page table {
+  white-space: nowrap;
+}
+
+.service-records-page th {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.service-records-page td {
+  font-size: 14px;
+}
+/* =========================================================
+   REPORTS PAGE
+========================================================= */
+
+.reports-page {
+  max-width: 1600px;
+}
+
+.report-card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.report-card .card-body {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 22px;
+}
+
+.report-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+
+.total-report-card {
+  border-left: 5px solid #0d6efd;
+}
+
+.total-report-card .report-icon {
+  background: #e7f1ff;
+  color: #0d6efd;
+}
+
+.active-report-card {
+  border-left: 5px solid #ffc107;
+}
+
+.active-report-card .report-icon {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.completed-report-card {
+  border-left: 5px solid #198754;
+}
+
+.completed-report-card .report-icon {
+  background: #d1e7dd;
+  color: #146c43;
+}
+
+.rate-report-card {
+  border-left: 5px solid #6f42c1;
+}
+
+.rate-report-card .report-icon {
+  background: #eadcf8;
+  color: #6f42c1;
+}
+
+.report-label {
+  color: #6c757d;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.report-number {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.amount-card {
+  border: none;
+  border-radius: 12px;
+}
+
+.amount-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.estimated-icon {
+  background: #e7f1ff;
+  color: #0d6efd;
+}
+
+.final-icon {
+  background: #d1e7dd;
+  color: #198754;
+}
+
+.average-icon {
+  background: #f0e6ff;
+  color: #6f42c1;
+}
+
+.status-summary-box {
+  padding: 18px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.activated-box {
+  background: #fff8e1;
+  border: 1px solid #ffe69c;
+}
+
+.completed-box {
+  background: #eaf7ef;
+  border: 1px solid #badbcc;
+}
+
+.status-summary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.reports-page .progress {
+  height: 10px;
+  border-radius: 10px;
+}
+
+.reports-page .card {
+  border-radius: 12px;
+}
+
+.reports-page table {
+  white-space: nowrap;
+}
+
+.reports-page th {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.reports-page td {
+  font-size: 14px;
+}

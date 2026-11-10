@@ -1,0 +1,40 @@
+# Frontend
+node_modules/
+dist/
+dist-ssr/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Customer data
+backend/data/
+**/data/
+*.xlsx
+*.xls
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Generated builds
+build/
+backend/dist/
+
+# Installer
+installer/
+*.exe
+*.msi
+
+# Logs
+*.log
+npm-debug.log*
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
